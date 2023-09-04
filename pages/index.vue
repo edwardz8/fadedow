@@ -1,19 +1,24 @@
 <template>
-    <div class="container mx-auto mt-4 flex justify-between">
-        <NuxtLink to="/">
-            <h2 class="ml-2 text-xl font-semibold">Fade<span class="text-green-400">Dow</span></h2>
-        </NuxtLink>
-        <div class="mr-2">
+    <main>
+        <Head>
+            <Script defer data-domain="fadedow.com" src="https://plausible.io/js/plausible.js" />
+        </Head>
+        <div class="container mx-auto mt-4 flex justify-between">
+            <NuxtLink to="/">
+                <h2 class="ml-2 text-xl font-semibold">Fade<span class="text-green-400">Dow</span></h2>
+            </NuxtLink>
+            <div class="mr-2">
             <NuxtLink to="/blog" class=" bg-gray-500 hover:bg-gray-600 text-white py-2 px-4 rounded-sm mb-8">News</NuxtLink>
         </div>
     </div>
     <div class="container mx-auto px-4 mt-8 mb-8 text-md text-gray-200">
         <h3 class="mb-2 text-lg">Welcome to FadeDow. College Sports Betting.</h3>
-
+        
         <p>Thanks for reading and if you'd like to reach out you can find me @adoughty on twitter. I'd love to hear from you! </p>
     </div>
     <Posts />
     <Footer />
+</main>
 </template>
 
 <script setup lang="ts">
