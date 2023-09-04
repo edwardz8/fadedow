@@ -7,10 +7,10 @@ const { data: posts } = await useAsyncData('posts', () =>
 <template>
     <main>
         <Head>
-            <Script defer data-domain="e8z.vercel.app" src="https://plausible.io/js/plausible.js" />
+            <Script defer data-domain="fadedow.com" src="https://plausible.io/js/plausible.js" />
         </Head>
         <div class="container mx-auto">
-            <h1 class="text-3xl my-8">Blog Posts</h1>
+            <h1 class="text-3xl my-8">All Posts</h1>
 
             <section class="ml-2 mr-2 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 mt-4 gap-4">
                 <Post :posts="posts" />
